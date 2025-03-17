@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="nevBar">
+            <div class="nevBarChild"></div>
+            <div class="nevBarChild">
+                <div class="nevBarGrandChild"></div>
+                <a href="#home" class="nevBarTittle">Home</a>
+                <a href="#about" class="nevBarTittle">About</a>
+                <a href="#skills" class="nevBarTittle">Skills</a>
+                <a href="#project" class="nevBarTittle">Project</a>
+                <a href="#contact" class="nevBarTittle">Contact</a>
+            </div>
+        </div>
+        <div class="container header-bg" id="home">
+            <div class="header-content">
+                <h1>Ajith kumar C</h1>
+                <p class="subtitle">Back-End Developer</p>
+                <a href="#project" class="cta-button">view My work</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-pic">
+                    <img src="ajith zsttk.jpeg" alt="Profile Picture">
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm Ajith Kumar</h3>
+                    <p>I'm a Passionate about solving problems and learning.</p>
+                    <p>I love learning because it helps me stay updated with new trends, technologies, and advancements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0azWb7Rl8nurvcSMYBgDVjG0YDP56OGYFaA&s" class="img1">
+                    <!-- <div class="skill-icon">🎨</div> -->
+                    <h3 class="skill-title">JAVA</h3>
+                    <!-- <p class="skill-description">Creating intuitive and engaging user experiences with a focus on usability and aesthetics. Expert in Figma, Adobe XD, and Sketch.</p> -->
+                </div>
+                <div class="skill-card">
+                    <!-- <div class="skill-icon">💻</div> -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR51pFQ_DIYMCw2xzgc107BW98OMIQZgqDGUA&s" class="img1">
+                    <h3 class="skill-title">Java Script</h3>
+                    <!-- <p class="skill-description">Building responsive and interactive websites using modern HTML, CSS, JavaScript, and frameworks like React and Vue.js.</p> -->
+                </div>
+                <div class="skill-card">
+                    <!-- <div class="skill-icon">🔍</div> -->
+                    <img src="https://static.vecteezy.com/system/resources/previews/013/313/458/non_2x/html-icon-3d-rendering-illustration-vector.jpg" alt="" class="img1">
+                    <h3 class="skill-title">Html</h3>
+                    <!-- <p class="skill-description">Developing cohesive brand identities including logos, color palettes, typography, and visual guidelines that resonate with target audiences.</p> -->
+                </div>
+                <div class="skill-card">
+                    <!-- <div class="skill-icon">📱</div> -->
+                    <img src="https://logowik.com/content/uploads/images/css-icon5555.logowik.com.webp" alt="" class="img1">
+                    <h3 class="skill-title">Css</h3>
+                    <!-- <p class="skill-description">Designing mobile-first experiences that provide seamless functionality across all device sizes.</p> -->
+                </div>
+                <div class="skill-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Pa4ygJZKJnzFxaPJY85O8vNSqgkUibzu5qqhIXT0cWa1qHP7ooGINV79eJ4ETYovLFM&usqp=CAU" alt="" class="img1">
+                    <h3 class="skill-title">Mysql</h3>
+                    <!-- <p class="skill-description">Analyzing complex problems and finding effective solutions through critical thinking and creativity.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="project">
+        <div class="container">
+            <h2 class="section-title">My Project</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="js">Java Script</button>
+                <button class="filter-btn" data-filter="html">Html&css</button>
+                <button class="filter-btn" data-filter="Scratch">Scratch</button>
+            </div>
+            <div class="portfolio-grid">
+                <a href="https://github.com/ThoufeekRZ/HireExpert" target="_blank">
+                    <div class="portfolio-item" data-category="java">
+                        <img src="logo.png" alt="">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Hire Expert</h3>
+                            <p class="portfolio-category">Java , React , Mysql</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/C-Ajith-07/javaProjects" target="_blank">
+                    <div class="portfolio-item" data-category="java">
+                        <img src="ArrayList.jpeg" alt="Project 1" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">ArrayList</h3>
+                            <p class="portfolio-category">Java</p>
+                        </div>
+                        <!-- <div class="portfolio-overlay"></div> -->
+                    </div>
+                </a>
+                <a href="https://github.com/C-Ajith-07/CarSellingSystem" target="_blank">
+                    <div class="portfolio-item" data-category="java">
+                        <img src="carSellingsystem.jpeg" alt="Project 2" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Car selling System</h3>
+                            <p class="portfolio-category">Java, Mysql</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ajithkumarchermathurai-3351-8443.zcodeusers.in/Js_project_01/" target="_blank">
+                    <div class="portfolio-item" data-category="js">
+                        <img src="typing.jpeg" alt="Project 2" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Type Writting</h3>
+                            <p class="portfolio-category">Javascript, Html&css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ajithkumarchermathurai-3351-8443.zcodeusers.in/final_project1/first.html"
+                    target="_blank">
+                    <div class="portfolio-item" data-category="html">
+                        <img src="download.jpeg" alt="Project 3" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Taj hotels</h3>
+                            <p class="portfolio-category">Html&Css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ajithkumarchermathurai-3351-8443.zcodeusers.in/Js_Assignment_023/" target="_blank">
+                    <div class="portfolio-item" data-category="js">
+                        <img src="rockPaper.jpeg" alt="Project 3" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Rock paper Siser</h3>
+                            <p class="portfolio-category">JavaScript, html&css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ajithkumarchermathurai-3351-8443.zcodeusers.in/Assignment_025/second.html"
+                    target="_blank">
+                    <div class="portfolio-item" data-category="html">
+                        <img src="lorumn.jpeg" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">LOREM IPSUM</h3>
+                            <p class="portfolio-category">Html&css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ajithkumarchermathurai-3351-8443.zcodeusers.in/calculator/" target="_blank">
+                    <div class="portfolio-item" data-category="js">
+                        <img src="calculator.png" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Calculator</h3>
+                            <p class="portfolio-category">JavaScript, Html&css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://scratch.mit.edu/projects/1036693995/" target="_blank">
+                    <div class="portfolio-item" data-category="Scratch">
+                        <img src="zoho .jpeg" alt="Project 4" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">zoho</h3>
+                            <p class="portfolio-category">Scratch</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://scratch.mit.edu/projects/1033982910/" target="_blank">
+                    <div class="portfolio-item" data-category="Scratch">
+                        <img src="plaction.png" alt="Project 5" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Plaction</h3>
+                            <p class="portfolio-category">Scratch</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <p class="section-title">Contact Me</p>
+        <p class="ptag">Email : ajithkumar.chermathurai@zohocorp.com</p>
+        <p class="ptag">Phone : 9072869265</p>
+        <p class="ptag">EmpId : zsttk-402/24</p>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            item.parentElement.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                            item.parentElement.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
