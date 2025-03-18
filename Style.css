@@ -1,6 +1,8 @@
 /* Base Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Base Styles (unchanged) */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
 * {
     margin: 0;
     padding: 0;
@@ -520,5 +522,313 @@ footer {
     
     .filter-btn {
         margin-bottom: 10px;
+    }
+}
+
+
+/* ... (Your existing base styles remain unchanged) ... */
+
+/* Responsive Design */
+
+/* Large Desktops (1200px and above) - Base styles apply */
+
+/* Medium Desktops/Laptops (992px - 1199px) */
+@media (max-width: 1199px) {
+    .container {
+        padding: 0 15px; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 3.5rem; /* Slightly smaller heading */
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 2.3rem;
+    }
+
+    .about-content {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .profile-pic {
+        width: 40%;
+    }
+
+    .skills-container {
+        width: 80%; /* Slightly wider on medium screens */
+    }
+
+    .skill-card {
+        width: 18%; /* Adjust skill card size */
+    }
+
+    .portfolio-grid {
+        gap: 20px; /* Reduce gap between portfolio items */
+    }
+
+    .portfolio-item {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 3rem; /* Further reduce heading size */
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .nevBarChild {
+        width: 70%; /* Adjust navbar width */
+    }
+
+    .nevBarTittle {
+        font-size: 1.1rem; /* Smaller navbar links */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack profile pic and text */
+        text-align: center;
+        height: auto;
+    }
+
+    .profile-pic {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .skills-container {
+        flex-wrap: wrap; /* Allow skills to wrap */
+        justify-content: center;
+        width: 90%;
+    }
+
+    .skill-card {
+        width: 30%; /* Larger skill cards on tablets */
+        margin-bottom: 20px;
+    }
+
+    .portfolio-grid {
+        gap: 15px;
+    }
+
+    .portfolio-item {
+        width: 250px;
+        height: 250px;
+    }
+
+    .ptag {
+        font-size: 1.3rem; /* Adjust contact text size */
+        line-height: 50px;
+    }
+}
+
+/* Large Mobile (576px - 767px) */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .nevBarChild {
+        width: 100%; /* Full-width navbar */
+        justify-content: space-evenly;
+    }
+
+    .nevBarTittle {
+        font-size: 1rem; /* Smaller navbar links */
+    }
+
+    .about-content {
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 70%; /* Larger profile pic on mobile */
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically */
+        width: 100%;
+    }
+
+    .skill-card {
+        width: 80%; /* Full-width skill cards */
+        height: auto;
+        padding: 20px;
+    }
+
+    .portfolio-filter {
+        flex-wrap: wrap; /* Allow filter buttons to wrap */
+        justify-content: center;
+    }
+
+    .filter-btn {
+        margin-bottom: 10px;
+        padding: 8px 15px;
+    }
+
+    .portfolio-grid {
+        gap: 10px;
+    }
+
+    .portfolio-item {
+        width: 100%; /* Full-width portfolio items */
+        height: 200px;
+    }
+
+    .portfolio-img {
+        height: 200px;
+    }
+
+    .portfolio-title {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-category {
+        font-size: 0.8rem;
+    }
+
+    .ptag {
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
+}
+
+/* Small Mobile (below 576px) */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 5px; /* Minimal padding on small screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .nevBar {
+        height: auto; /* Allow navbar to grow */
+        padding: 10px 0;
+    }
+
+    .nevBarChild {
+        flex-direction: column; /* Stack navbar links vertically */
+        align-items: center;
+        width: 100%;
+    }
+
+    .nevBarTittle {
+        font-size: 0.9rem;
+        margin: 10px 0; /* Space between stacked links */
+    }
+
+    .about-content {
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 100%; /* Full-width profile pic */
+    }
+
+    .about-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    .skills-container {
+        padding: 10px;
+    }
+
+    .skill-card {
+        width: 100%; /* Full-width skill cards */
+        padding: 15px;
+    }
+
+    .skill-title {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-filter {
+        padding: 10px;
+    }
+
+    .filter-btn {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
+    .portfolio-grid {
+        gap: 5px;
+    }
+
+    .portfolio-item {
+        height: 180px;
+    }
+
+    .portfolio-img {
+        height: 180px;
+    }
+
+    .portfolio-title {
+        font-size: 1rem;
+    }
+
+    .portfolio-category {
+        font-size: 0.7rem;
+    }
+
+    .ptag {
+        font-size: 1rem;
+        line-height: 30px;
     }
 }
